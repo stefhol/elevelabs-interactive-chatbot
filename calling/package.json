@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@11labs/client": "^0.0.2",
+    "@deepgram/sdk": "^3.9.0",
+    "@types/express": "^5.0.0",
+    "@types/express-ws": "^3.0.5",
+    "@types/node": "^22.9.0",
+    "@types/ws": "^8.5.13",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "elevenlabs": "^0.18.0",
+    "express": "^4.21.1",
+    "express-ws": "^5.0.2",
+    "nodemon": "^3.1.7",
+    "openai": "^4.71.1",
+    "play": "^0.5.0",
+    "speaker": "^0.5.5",
+    "tsx": "^4.19.2",
+    "twilio": "^5.3.5",
+    "typescript": "^5.6.3"
+  },
+  "name": "hack",
+  "version": "1.0.0",
+  "main": "call.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
