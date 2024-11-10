@@ -4,11 +4,8 @@
 
 }
 
-body {
-  background-image: url('assets/1.PNG');
-  height: 100%
-}
-
-body.telephone {
-  background-image: url('assets/2.PNG');
+img.background {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
 }

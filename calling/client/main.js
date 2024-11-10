@@ -3,6 +3,10 @@ const button = document.getElementById('status')
 const ring = document.getElementById('ring')
 const audio = document.getElementById("myAudio");
 
+/** @type HTMLImageElement | undefined **/
+const background = document.getElementById('background');
+const backgroundTelephone = document.getElementById('background-telephone');
+
 /** @type Conversation | undefined **/
 let conversation = undefined
 /** @type string **/
@@ -12,6 +16,8 @@ async function init() {
   const response = await fetch("/signed-url");
   signedUrl = await response.text();
 }
+background.hidden = false;
+backgroundTelephone.hidden = true;
 init();
 let protocol = ''
 document.body.onclick = async () => {
@@ -19,14 +25,16 @@ document.body.onclick = async () => {
     if (conversation) {
       await conversation.endSession()
       conversation = undefined
-      document.body.classList = ''
+      background.hidden = false;
+      backgroundTelephone.hidden = true;
     } else {
       await startSession()
     }
   }
   else {
     make_ring()
-    document.body.classList = 'telephone'
+    background.hidden = true;
+    backgroundTelephone.hidden = false;
   }
 }
 
