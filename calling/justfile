@@ -1,4 +1,0 @@
-run:
-    cd client; npm run build;
-    node --env-file=.env ./voice_assist_server.js
-
